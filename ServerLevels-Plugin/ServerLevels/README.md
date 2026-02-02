@@ -29,7 +29,7 @@ This plugin uses an exponential formula to make leveling much harder than the or
 | 24    | 50,168 XP   | 241,760 XP| 20,146.7 hours  |
 
 **Note**: These times assume ONLY playtime. With voting and quests, progress is faster.
-
+ 
 ## Dependencies
 
 **Required:**
