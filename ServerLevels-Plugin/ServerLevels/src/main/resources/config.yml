@@ -1,0 +1,219 @@
+# ServerLevels Configuration
+# XP requirements use an exponential curve for harder progression
+
+# XP Sources
+xp-sources:
+  playtime:
+    enabled: true
+    minutes: 5
+    xp-reward: 1
+  voting:
+    enabled: true
+    xp-reward: 10
+  daily-quests:
+    enabled: true
+    xp-reward: 5
+
+# Level Configuration
+# Formula: XP = baseXP * (multiplier ^ (level - 1))
+# This creates a steep exponential curve
+level-settings:
+  max-level: 24
+  base-xp: 50              # Starting XP requirement
+  multiplier: 1.35         # Exponential growth multiplier
+  
+# Exact XP requirements per level (calculated with formula above)
+# These values make leveling MUCH harder - requires serious grinding
+level-xp-requirements:
+  1: 50
+  2: 68
+  3: 92
+  4: 124
+  5: 167
+  6: 226
+  7: 305
+  8: 412
+  9: 556
+  10: 751
+  11: 1014
+  12: 1369
+  13: 1848
+  14: 2495
+  15: 3368
+  16: 4547
+  17: 6139
+  18: 8287
+  19: 11188
+  20: 15104
+  21: 20390
+  22: 27527
+  23: 37161
+  24: 50168
+
+# Rewards for each level
+level-rewards:
+  1:
+    commands:
+      - "lp user %player% permission set essentials.enderchest true"
+      - "lp user %player% permission set essentials.sethome.multiple.3 true"
+      - "eco give %player% 5000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 1&7!"
+    
+  2:
+    commands:
+      - "lp user %player% permission set essentials.recipe true"
+      - "lp user %player% permission set essentials.sethome.multiple.4 true"
+      - "eco give %player% 7500"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 2&7!"
+    
+  3:
+    commands:
+      - "lp user %player% permission set essentials.back true"
+      - "lp user %player% permission set essentials.sethome.multiple.5 true"
+      - "eco give %player% 10000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 3&7!"
+    
+  4:
+    commands:
+      - "lp user %player% permission set essentials.workbench true"
+      - "lp user %player% permission set essentials.sethome.multiple.6 true"
+      - "eco give %player% 12500"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 4&7!"
+    
+  5:
+    commands:
+      - "lp user %player% permission set essentials.hat true"
+      - "eco give %player% 15000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 5&7!"
+    
+  6:
+    commands:
+      - "lp user %player% permission set essentials.repair true"
+      - "lp user %player% permission set essentials.sethome.multiple.7 true"
+      - "eco give %player% 17500"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 6&7!"
+    
+  7:
+    commands:
+      - "lp user %player% permission set essentials.skull true"
+      - "eco give %player% 20000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 7&7!"
+    
+  8:
+    commands:
+      - "lp user %player% permission set essentials.anvil true"
+      - "lp user %player% permission set essentials.sethome.multiple.8 true"
+      - "eco give %player% 22500"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 8&7!"
+    
+  9:
+    commands:
+      - "lp user %player% permission set essentials.enchantingtable true"
+      - "eco give %player% 25000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 9&7!"
+    
+  10:
+    commands:
+      - "lp user %player% permission set essentials.disposal true"
+      - "eco give %player% 30000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 10&7!"
+    
+  11:
+    commands:
+      - "lp user %player% permission set essentials.sethome.multiple.9 true"
+      - "eco give %player% 35000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 11&7!"
+    
+  12:
+    commands:
+      - "lp user %player% permission set essentials.nick true"
+      - "eco give %player% 40000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 12&7!"
+    
+  13:
+    commands:
+      - "lp user %player% permission set essentials.sethome.multiple.10 true"
+      - "eco give %player% 45000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 13&7!"
+    
+  14:
+    commands:
+      - "lp user %player% permission set essentials.signs.color true"
+      - "lp user %player% permission set essentials.signs.rgb true"
+      - "eco give %player% 50000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 14&7!"
+    
+  15:
+    commands:
+      - "lp user %player% permission set essentials.feed true"
+      - "lp user %player% permission set essentials.sethome.multiple.12 true"
+      - "eco give %player% 60000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 15&7!"
+    
+  16:
+    commands:
+      - "lp user %player% permission set essentials.heal true"
+      - "eco give %player% 70000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 16&7!"
+    
+  17:
+    commands:
+      - "lp user %player% permission set essentials.sethome.multiple.15 true"
+      - "eco give %player% 80000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 17&7!"
+    
+  18:
+    commands:
+      - "lp user %player% permission set essentials.ext true"
+      - "eco give %player% 90000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 18&7!"
+    
+  19:
+    commands:
+      - "lp user %player% permission set essentials.sethome.multiple.18 true"
+      - "eco give %player% 100000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 19&7!"
+    
+  20:
+    commands:
+      - "lp user %player% permission set essentials.speed true"
+      - "lp user %player% permission set essentials.speed.fly true"
+      - "eco give %player% 125000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 20&7!"
+    
+  21:
+    commands:
+      - "lp user %player% permission set essentials.sethome.multiple.20 true"
+      - "eco give %player% 150000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 21&7!"
+    
+  22:
+    commands:
+      - "lp user %player% permission set essentials.kit.* true"
+      - "eco give %player% 175000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 22&7!"
+    
+  23:
+    commands:
+      - "lp user %player% permission set essentials.sethome.multiple.25 true"
+      - "eco give %player% 200000"
+    broadcast: "&8[&a&l!&8] &a%player% &7reached &aLevel 23&7!"
+    
+  24:
+    commands:
+      - "lp user %player% permission set essentials.fly true"
+      - "eco give %player% 250000"
+    broadcast: "&8[&6&l!&8] &6%player% &7has reached &6&lMAX LEVEL &7and unlocked &b/fly&7!"
+
+# Messages
+messages:
+  prefix: "&8[&c&lLEVELS&8]"
+  level-up: "&a&lLEVEL UP! &7You are now level &a%level%&7!"
+  xp-gain: "&7+&a%xp%XP &8(&7%source%&8)"
+  not-enough-xp: "&cYou need &f%xp%XP &cto reach level &f%level%&c!"
+  max-level: "&cYou are already at max level!"
+  player-not-found: "&cPlayer not found!"
+  admin-give-xp: "&aGave &f%amount%XP &ato &f%player%"
+  admin-take-xp: "&cTook &f%amount%XP &cfrom &f%player%"
+  admin-set-level: "&aSet &f%player%'s &alevel to &f%level%"
+  admin-reset: "&aReset &f%player%'s &aprogress"

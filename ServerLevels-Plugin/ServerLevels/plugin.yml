@@ -1,0 +1,26 @@
+name: ServerLevels
+version: 1.0.0
+main: com.yourserver.levels.ServerLevels
+api-version: 1.20
+author: YourServer
+description: Custom server leveling system with progressive XP requirements
+
+depend: [Vault, LuckPerms]
+softdepend: [CoinsEngine, DeluxeMenus, CrazyEnchantments, EssentialsX]
+
+commands:
+  levels:
+    description: Open the levels menu
+    usage: /levels
+    aliases: [level, lvl]
+  
+  leveladmin:
+    description: Admin commands for levels
+    usage: /leveladmin <give|take|set|reset> <player> <amount>
+    permission: serverlevels.admin
+    aliases: [lvladmin]
+
+permissions:
+  serverlevels.admin:
+    description: Access to admin commands
+    default: op
